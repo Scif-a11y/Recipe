@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FlavorForge</title>
+    <link rel="icon" href="icons/iconsymbol.svg" type="image/x-icon">
+    <style>
+        * {
+            font-family: Geist Mono;
+            /* background-color: rgba(35,43,66,255); */
+            color: white;
+            font-size: 20px;
+            margin: 0;
+            padding: 0;
+        }
+            body{
+        overflow: hidden;
+        height: 100vh;
+        width: 100vw;
+        max-height: 100vh;
+        max-width: 100vw;
+    background-image: linear-gradient(90deg,rgba(35,43,66,255),rgba(14,17,26,255));
+
+    }
+    header {
+    width: 100%;
+    height: 10%;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    animation: headerDown 1s linear;
+    animation-fill-mode: forwards;
+}
+
+.container {
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: -0.7rem;
+}
+
+.logo {
+    height: 100%;
+    width: 15%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo h2 {
+    font-size: 40px;
+}
+
+.headlist {
+    height: 100%;
+    width: 27%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.headlist ul {
+    width: 100%;
+    list-style: none;
+    display: flex;
+    gap: 3.05rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.headlist a {
+    font-size: 18px;
+    text-decoration: none;
+    color: orange;
+    font-weight: 600;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.headlist a:hover {
+    background-color: orange;
+    padding: 10px;
+    transition: all linear 0.2s;
+    color: navy;
+}
+
+.but {
+    height: 100%;
+    width: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 3.4rem;
+}
+
+.signUp {
+    font-family: geist mono;
+    font-size: 18px;
+    border: 2px orange solid;
+    border-radius: 30px;
+    outline: none;
+    background-color: transparent;
+    color: white;
+    padding: 10px;
+    padding-left: 25px;
+    padding-right: 25px;
+    transition: all linear 0.2s;
+}
+
+.signUp:hover {
+    background-color: orange;
+    color: navy;
+}
+
+        main {
+            margin: 20px;
+        }
+        .content {
+            margin-left: 20%;
+            margin-right: 20%;
+        }
+        .heading {
+            font-size: 27px;
+            margin-top: 30px;
+            color: orange;
+            transition: color 0.3s; /* Transition effect */
+        }
+        .heading:hover {
+            color: white; /* Change color on hover */
+        }
+        .para {
+            line-height: 1.6;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo"><h2>FlavorForge</h2></div>
+            <div class="headlist">
+                <ul>
+                    <li><a href="homepage.html" style="padding-left: 20px;padding-right: 20px;">Home</a></li>
+                    <li><a href="About.html">About Us</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="but"><button class="signUp">Sign Up</button></div>
+        </div>
+    </header>
+    <main>
+        <div class="content">
+            <div class="aboutus">
+                <div class="heading">About Us</div>
+                <div class="para">Welcome to FlavorForge, your go-to destination for delicious recipes and culinary inspiration! Whether you’re a seasoned chef or a kitchen novice, our goal is to provide you with the tools and inspiration to create memorable meals.</div>
+            </div>
+            <div class="mission">
+                <div class="heading">Our Mission</div>
+                <div class="para">At FlavorForge, our mission is simple: to make cooking enjoyable and accessible for everyone. We believe that good food brings people together, fosters connection, and creates lasting memories. Our aim is to inspire you to explore the joy of cooking, encouraging you to try new flavors, experiment with ingredients, and share your culinary creations with loved ones.</div>
+            </div>
+            <div class="offer">
+                <div class="heading">What We Offer</div>
+                <div class="para">We curate a diverse collection of recipes that cater to every taste and dietary preference. From quick weeknight dinners that fit into your busy schedule to indulgent desserts that wow your guests, we have something for everyone. Our site features:
+                    <br><br>
+                    <strong>Recipe Variety:</strong> Explore categories such as healthy options, vegetarian and vegan dishes, international cuisines, and seasonal specialties. We believe in providing recipes that cater to all lifestyles and preferences.
+                    <br><br>
+                    <strong>User-Friendly Resources:</strong> Our user-friendly layout makes it easy to find what you’re looking for. Plus, we offer meal planning tools, shopping lists, and cooking tips to help streamline your kitchen experience. Each recipe includes prep time, cooking time, serving sizes, and step-by-step instructions to make cooking a breeze.
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

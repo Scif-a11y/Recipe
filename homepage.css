@@ -1,0 +1,299 @@
+*{
+    font-family: geist mono;
+    color: white;
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    outline: none;
+}
+body{
+    overflow: hidden;
+    height: 100vh;
+    width: 100vw;
+    max-height: 100vh;
+    max-width: 100vw;
+    background-image: linear-gradient(90deg,rgba(35,43,66,255),rgba(14,17,26,255));
+}
+header{
+    width: 100%;
+    height: 10%;
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+@keyframes headerDown {
+    to{
+        transform: translateY(0rem);
+    }
+}
+
+.container{
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo{
+    height: 100%;
+    width: 15%;
+    display: flex;
+    justify-content: center;
+    animation: appear 2s linear;
+    animation-fill-mode: forwards;
+    align-items: center;
+    opacity: 0;
+}
+@keyframes appear {
+
+    to{
+        opacity: 1;
+    }
+}
+.logo h2{
+    font-size: 40px;
+}
+.headlist {
+    background-color: rgba(255, 255, 255, 0.07);
+    transform: translateY(-5rem);
+    animation: headerDown 1s linear;
+    animation-delay: 1s;
+    animation-fill-mode: forwards;
+    height: 60%;
+    width:27%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 200px;
+}
+.headlist ul{
+    width: 100%;
+    list-style: none;
+    text-decoration: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.headlist a {
+    font-size: 18px;
+    text-decoration: none;
+    color: orange;
+    font-weight: 600;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.headlist a:hover {
+    background-color: orange;
+    padding: 10px;
+    transition: all linear  0.2s;
+    color: navy;
+}
+.but{
+    height: 100%;
+    width: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.signUp{
+    font-family: geist mono;
+    font-size: 18px;
+    border: none;
+    border: 2px orange solid;
+    border-radius: 30px;
+    outline: none;
+    background-color: transparent;
+    color: white;
+    padding: 10px;
+    padding-left: 25px;
+    padding-right: 25px;
+    transition: all linear  0.2s;
+    visibility: hidden;
+}
+.signUp:hover{
+    background-color: orange;
+    color: navy;
+}
+main{
+    width: 100%;
+    height: 90%;
+    padding-right: 2rem;
+    padding-left: 2rem;
+}
+.maincontainer{
+    height: 100%;
+    display: flex;
+    gap: 15%;
+}
+.left{
+   width: 35%;
+   height: 100%;
+   display: flex;
+   flex-direction: column;
+}
+.texting{
+    width: 100%;
+    height: 20%;
+    display: flex;
+    align-items: center;
+}
+.typing-effect{
+    display: flex;
+    font-size: 2.2rem;
+}
+.typing-effect {
+    font-family: geist mono;
+    font-size: 40px;
+    font-weight: 600;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 2px solid transparent;
+    width: 0;
+    animation: typing 2s linear;
+    animation-delay: 1s;
+    animation-fill-mode: forwards;
+    margin-left: 50px;
+  }
+
+  @keyframes typing {
+    from { width: 0; }
+    to { width: 100%; }
+  }
+
+  @keyframes blink {
+    from, to { border-color: transparent; }
+    100% { border-color:transparent; }
+  }
+.right{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 5%;
+    transform: translateX(60rem);
+    animation: righttoleft 1s linear;
+    animation-fill-mode: forwards;
+}
+@keyframes righttoleft {
+    to{
+        transform: translateX(0rem);
+    }
+}
+.foodBowlIcon{
+    height: 28rem;
+    position: relative;
+    left: -2.2rem;
+    top: -1rem;
+    animation: rotation 1s linear;
+    animation-fill-mode: forwards;
+}
+.foodBowl{
+    transform: translateY(43rem);
+    background-color: white;
+    width: 26rem;
+    height: 43rem;
+    border-radius: 20rem 20rem 0rem 0rem;
+    margin-left: 3rem;
+    animation: bowl 1s linear;
+    animation-fill-mode: forwards;
+}
+@keyframes bowl {
+    to{
+        transform: translateY(0rem);
+    }
+}
+@keyframes rotation {
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
+.dots{
+    background-color: orange;
+    color: orange;
+    width: fit-content;
+    border-radius: 30px;
+    height: 20px;
+    width: 20px;
+}
+.dotsContainer{
+    display: grid;
+    grid-template-rows: repeat(2,4rem);
+    grid-template-columns: repeat(5,4rem);
+    align-items: end;
+    width: 70%;
+}
+.plusContainer{
+    width: 30%;
+    display: flex;
+    justify-content:right;
+    align-items:end;
+}
+.rightone{
+    display: flex;
+    height: 20%;
+}
+.righttwo{
+    margin-top: 4rem;
+    display: flex;
+    flex-direction: column;
+    height: 50%;
+    gap: 50px;
+}
+.righttwo .heading{
+    font-size: 4rem;
+    color: white;
+    line-height: 70px;
+}
+.righttwo p{
+    font-size: 1.6rem;
+    color: rgba(255, 255, 255, 0.5);
+    line-height: 0.1rem;
+}
+.righttwo button{
+    background-color: orange;
+    padding: 1rem;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    border-radius: 5rem;
+    font-size: 1.5rem;
+    width: fit-content;
+    border: 2px solid rgba(14,17,26,255);
+    transition: all 0.4s;
+    cursor: pointer;
+}
+.righttwo button:hover{
+    background-color: transparent;
+    border: 2px orange solid;
+}
+.rightthree{
+    height:20% ;
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+}
+.footerContainer a{
+    margin-bottom: 1rem;
+    text-decoration: none;
+    padding:0.7rem ;
+    border-radius: 20rem;
+}
+
+.footerContainer{
+    display: flex;
+    position: relative;
+    left: -10rem;
+    gap: 2rem;
+    cursor: pointer;
+}
+.footerContainer a:hover{
+    color: orange;
+}
+.cornerDots {
+    margin-right: -25px;
+    height: 100%;
+}
+.plusContainer img{
+    height: 5rem;
+}

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FlavorForge</title>
+    <link rel="icon" href="icons/iconsymbol.svg" type="image/x-icon">
+    <link rel="stylesheet" href="start.css">
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <div class="logo"><h2>FlavorForge</h2></div>
+            <div class="headlist">
+                <ul>
+                    <li><a href="homepage.html" style="padding-left: 20px;padding-right: 20px;">Home</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="but"><button class="signUp">Sign Up</button></div>
+        </div>
+    </header>
+    <main>
+       <div class="typo">
+            <div class="typing-effect">Don't <span style="color: orange;">Know</span> What <span
+                    style="color: orange;">to</span> Cook?
+            </div>
+            <div class="typing-effect">
+                    We've <span style="color: orange;">got</span> the <span
+                    style="color: orange;">perfect</span> recipe <span style="color: orange;">waiting</span> for you...
+            </div>
+       </div>
+       <div class="searcho">
+            <div class="searchContainer" id="searchContainer">
+                <input type="text" autocomplete="off" class="searchBar" placeholder="Search" name="" id="searchBar">
+                <button type="submit" onclick="document.getElementById('output-recipe').style.display='grid';" id="searchbutton" class="searchbutton"><img class="searchIcon" src="icons/searchIcon.png" alt=""></button>
+            </div>
+       </div>
+        <div class="grid" id="grids">
+            <div class="a box">
+                <img src="icons/starter.jpeg" alt="" class="dishimg">
+                <a href="#"><div class="overlay"><span>Starter</span></div></a>
+            </div>
+            <div class="b box">
+                <img src="icons/main.jpeg" alt="" class="dishimg">
+                <a href="#"><div class="overlay"><span>Main</span></div></a>
+            </div>
+            <div class="c box">
+                <img src="icons/desert.jpeg" alt="" class="dishimg">
+                <a href="#"><div class="overlay"><span>Desert</span></div></a>
+            </div>
+            <div class="d box">
+                <img src="icons/beverages.jpg" alt="" class="dishimg">
+                <a href="#"><div class="overlay"><span>Beverages</span></div></a>
+            </div>
+        </div>
+        <div class="output-recipe" id="output-recipe">
+        </div>
+    </main>
+    <script src="homepage.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,124 @@
+*{
+    font-family: geist mono;
+    color: white;
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    outline: none;
+  }
+  body{
+    /* display: flex; */
+    flex-direction: column;
+    gap: 5%;
+    height: auto;
+    background-image: linear-gradient(90deg,rgba(35,43,66,255),rgba(14,17,26,255));
+  }
+  header{
+    width: 100%;
+    height: 4.9rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+  .container{
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .logo{
+    height: 100%;
+    width: 15%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .logo h2{
+    font-size: 40px;
+  }
+  .headlist {
+    height: 100%;
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .headlist ul{
+    width: 100%;
+    list-style: none;
+    text-decoration: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .headlist a {
+    font-size: 18px;
+    text-decoration: none;
+    color: orange;
+    font-weight: 600;
+    padding: 10px;
+    border-radius: 5px;
+  }
+
+  .headlist a:hover {
+    background-color: orange;
+    padding: 10px;
+    transition: all linear  0.2s;
+    color: navy;
+  }
+  .but{
+    height: 100%;
+    width: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .signUp{
+    font-family: geist mono;
+    font-size: 18px;
+    border: 2px orange solid;
+    border-radius: 30px;
+    outline: none;
+    background-color: transparent;
+    color: white;
+    padding: 10px;
+    padding-left: 25px;
+    padding-right: 25px;
+    transition: all linear  0.2s;
+  }
+  .signUp:hover{
+    background-color: orange;
+    color: navy;
+  }
+.content{
+    padding: 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.aboutus{
+    width: 100%;
+    height: 10rem;
+}
+.heading{
+    width: 100%;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 2.7rem;
+}
+.para{
+    color: rgba(255, 255, 255, 0.658);
+    width: 100%;
+    font-size: 1.5rem;
+}
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.content{
+    width: 70%;
+    gap: 2rem;
+}
