@@ -286,5 +286,5 @@ input[type="text"]::after{
   display: none;
 }
 .but *{
-  visibility:hidden;
+  Visibility:hidden;
 }
