@@ -285,6 +285,6 @@ input[type="text"]::after{
 #output-recipe{
   display: none;
 }
-.but *{
-  Visibility:hidden;
+.but{
+  visibility:hidden;
 }
